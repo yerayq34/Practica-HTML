@@ -57,3 +57,108 @@ nav a:hover,
 nav a.active {
     background-color: #3498db;
 }
+
+.perfil {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin: 30px 0;
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.foto-perfil {
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    height: auto;
+}
+
+.descripcio {
+    flex: 1;
+}
+
+.llistat-viatges {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin: 40px 0;
+}
+
+.viatge {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.viatge:hover {
+    transform: translateY(-5px);
+}
+
+.viatge img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    max-height: 250px;
+    object-fit: contain;
+    border-radius: 6px;
+    margin: 15px 0;
+    display: block;
+}
+
+.viatge a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #3498db;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.diari-viatge {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin: 30px 0;
+}
+
+.diari-viatge h1 {
+    color: #2c3e50;
+    margin-bottom: 30px;
+    font-size: 2.5em;
+}
+
+.dia {
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.dia:last-child {
+    border-bottom: none;
+}
+
+.dia img {
+    max-width: 80%;
+    width: auto;
+    height: auto;
+    max-height: 400px;
+    display: block;
+    margin: 15px auto;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.anecdota,
+.recomanacio,
+.plat-tipic {
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: 6px;
+    margin: 15px 0;
+    border-left: 4px solid #3498db;
+}
